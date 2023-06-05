@@ -16,7 +16,7 @@
 
 
 
-let pergunta = confirm(`Bem-vindo ao jogo de BlackJack! Quer iniciar uma nova rodada?`);
+let pergunta = confirm(`Bem-vindo ao jogo de BlackJack!\nQuer iniciar uma nova rodada?`);
 
 if (pergunta) {
   //fiz um array para armazenar as cartas do usuario
