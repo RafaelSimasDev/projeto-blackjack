@@ -15,45 +15,45 @@
 
 
 
-console.log(`Boas-vindas ao jogo BlackJack!`);
+// console.log(`Boas-vindas ao jogo BlackJack!`);
 
-let pergunta = confirm(`Quer iniciar uma nova rodada?`)
+// let pergunta = confirm(`Quer iniciar uma nova rodada?`)
 
-function projetoBlackJack(){
+// function projetoBlackJack(){
 
-if(pergunta === true){       //Poderia colocar apenas if(pergunta){} ----> há uma condição de true ou false pois é um booleano. 
-   // cada jogador precisa sortear duas cartas, entao usaremos o metodo ->  comprarCarta()
-   // método para sortear carta
+// if(pergunta === true){       //Poderia colocar apenas if(pergunta){} ----> há uma condição de true ou false pois é um booleano. 
+//    // cada jogador precisa sortear duas cartas, entao usaremos o metodo ->  comprarCarta()
+//    // método para sortear carta
 
-    const cartaJogador1 = comprarCarta()
-    const cartaJogador2 = comprarCarta()
-    const cartaMaquina1 = comprarCarta()
-    const cartaMaquina2 = comprarCarta()
+//     const cartaJogador1 = comprarCarta()
+//     const cartaJogador2 = comprarCarta()
+//     const cartaMaquina1 = comprarCarta()
+//     const cartaMaquina2 = comprarCarta()
 
-   // símbolo da carta = .texto == `cartas`   //   valor da carta = .valor == `pontuacao`
+//    // símbolo da carta = .texto == `cartas`   //   valor da carta = .valor == `pontuacao`
 
-   // "Usuário - cartas: Q♣️ 10♣️ - pontuação 20"   //   "Computador - cartas: Q♣️ 10♣️ - pontuação 20"
+//    // "Usuário - cartas: Q♣️ 10♣️ - pontuação 20"   //   "Computador - cartas: Q♣️ 10♣️ - pontuação 20"
    
-    console.log(`Usuário - cartas: ${cartaJogador1.texto} ${cartaJogador2.texto} - pontuação: ${cartaJogador1.valor + cartaJogador2.valor}`)
-    console.log(`Computador - cartas: ${cartaMaquina1.texto} ${cartaMaquina2.texto} - pontuação: ${cartaMaquina1.valor + cartaMaquina2.valor}`)
+//     console.log(`Usuário - cartas: ${cartaJogador1.texto} ${cartaJogador2.texto} - pontuação: ${cartaJogador1.valor + cartaJogador2.valor}`)
+//     console.log(`Computador - cartas: ${cartaMaquina1.texto} ${cartaMaquina2.texto} - pontuação: ${cartaMaquina1.valor + cartaMaquina2.valor}`)
 
-   // para finalizar faremos um if  //  "Empate!" ou "O usuário ganhou!" ou "O computador ganhou!"
-   // criei 2 variavel para armazenar as contas.
+//    // para finalizar faremos um if  //  "Empate!" ou "O usuário ganhou!" ou "O computador ganhou!"
+//    // criei 2 variavel para armazenar as contas.
 
-   let pontuacaoJogador = cartaJogador1.valor + cartaJogador2.valor
-   let pontuacaoMaquina = cartaMaquina1.valor + cartaMaquina2.valor
+//    let pontuacaoJogador = cartaJogador1.valor + cartaJogador2.valor
+//    let pontuacaoMaquina = cartaMaquina1.valor + cartaMaquina2.valor
 
-   if(pontuacaoJogador === pontuacaoMaquina){
-      console.log(`Empate!`)
-   } else if (pontuacaoJogador > pontuacaoMaquina){
-      console.log(`O usuário ganhou!`)
-   } else{
-      console.log(`O computador ganhou!`)
-   }
+//    if(pontuacaoJogador < pontuacaoMaquina && pontuacaoMaquina <= 21){
+//       console.log(`O computador ganhou!`)
+//    } else if (pontuacaoJogador > pontuacaoMaquina && pontuacaoJogador <= 21){
+//       console.log(`O usuário ganhou!`)
+//    } else{
+//       console.log(`Empate!`)
+//    }
    
-}else{
-   console.log(`O jogo acabou!`)
-}
+// }else{
+//    console.log(`O jogo acabou!`)
+// }
 
-}
-projetoBlackJack()
+// }
+// projetoBlackJack()
