@@ -43,12 +43,12 @@ if(pergunta === true){       //Poderia colocar apenas if(pergunta){} ----> há u
    let pontuacaoJogador = cartaJogador1.valor + cartaJogador2.valor
    let pontuacaoMaquina = cartaMaquina1.valor + cartaMaquina2.valor
 
-   if(pontuacaoJogador === pontuacaoMaquina){
-      console.log(`Empate!`)
-   } else if (pontuacaoJogador > pontuacaoMaquina){
+   if(pontuacaoJogador < pontuacaoMaquina && pontuacaoMaquina <= 21){
+      console.log(`O computador ganhou!`)
+   } else if (pontuacaoJogador > pontuacaoMaquina && pontuacaoJogador <= 21){
       console.log(`O usuário ganhou!`)
    } else{
-      console.log(`O computador ganhou!`)
+      console.log(`Empate!`)
    }
    
 }else{
